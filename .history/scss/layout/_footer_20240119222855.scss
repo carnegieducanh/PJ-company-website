@@ -1,0 +1,99 @@
+@use "../abstracts";
+.footer {
+    padding: 50px 0;
+    height: 350px;
+    background: var(--color-basic-bg);
+
+    &__inner {
+        position: relative;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__heading {
+        font-weight: 500;
+        font-size: 1.9rem;
+    }
+
+    &__list {
+        & li:first-child {
+            padding-top: 30px;
+        }
+    }
+
+    &__link {
+        line-height: 1.4;
+        font-size: 16px;
+        padding: 6px 0 7px 0;
+        display: inline-block;
+        color: var(--color-basic-black);
+
+        &:hover {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+
+        & img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &-on-mobile {
+        @include abstracts.screen(lg) {
+            display: none;
+        }
+    }
+
+    &__certificate {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        bottom: 60px;
+        gap: 40px;
+        text-align: center;
+        @include abstracts.screen(lg) {
+            justify-content: space-evenly;
+            display: flex;
+            align-items: center;
+            position: unset;
+            text-align: center;
+        }
+
+        &-item img {
+            width: 60px;
+            height: 60px;
+            box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.25);
+            object-fit: cover;
+        }
+
+        &-item p {
+            padding-top: 10px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid var(--color-basic-black);
+        margin-top: 300px;
+        padding-top: 30px;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+
+            & a:hover {
+                color: var(--color-primary);
+                text-decoration: underline;
+            }
+        }
+    }
+}

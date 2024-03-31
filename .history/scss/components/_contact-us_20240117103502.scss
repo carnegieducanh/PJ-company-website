@@ -1,0 +1,23 @@
+.contact-us {
+    margin: 0 150px;
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__content p {
+        text-align: justify;
+        font-weight: normal;
+    }
+
+    &__form {
+        width: 70%;
+        padding-top: 20px;
+        margin: 0 auto;
+
+        &-input {
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.special {
+    background: #e8e8e8;
+
+    &-intro {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__thumb {
+        width: 100vw;
+        object-fit: cover;
+    }
+}

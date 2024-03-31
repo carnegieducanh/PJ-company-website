@@ -1,0 +1,19 @@
+.philosophy {
+    &__content p {
+        font-size: 1.7rem;
+        line-height: 1.9;
+        color: var(--color-font);
+    }
+
+    &__content-table {
+        width: 70%;
+        margin-top: 30px;
+        padding: 5px 100px;
+        line-height: 4.2rem;
+        color: var(--color-font);
+
+        & a {
+            text-decoration: underline;
+        }
+    }
+}

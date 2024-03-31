@@ -1,0 +1,33 @@
+.btn {
+    &-contact {
+        width: 20%;
+        height: 50px;
+        color: #fff;
+        background-color: var(--color-primary);
+        border-radius: 10px;
+        border: 1px solid #ffffff;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: inherit;
+        margin: 30px 40%;
+    }
+
+    &__summary {
+        width: 20%;
+        min-width: 100px;
+        border: 1px solid #d4d4d4;
+        color: var(--color-basic-black);
+        background: #f0f0f0;
+        border-radius: 5px;
+        height: 30px;
+        font-size: large;
+    }
+
+    &__read-more {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: var(--color-basic-black);
+        border: 1px solid var(--color-basic-bg);
+    }
+}

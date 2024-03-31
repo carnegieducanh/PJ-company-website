@@ -1,0 +1,15 @@
+.box-content {
+    &__welfare {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    &__icon {
+    }
+
+    &__title {
+    }
+
+    &__detail {
+    }
+}

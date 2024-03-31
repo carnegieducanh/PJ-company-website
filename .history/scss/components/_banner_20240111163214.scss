@@ -1,0 +1,41 @@
+.banner {
+    &-inner {
+        position: fixed;
+        top: 85px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background-color: rgba(232, 232, 232, 0.95);
+        transition: top ease 0.3s;
+    }
+
+    &-box {
+        display: flex;
+        align-items: center;
+        padding: 15px 8px;
+        background-color: transparent;
+        margin-bottom: 0;
+    }
+
+    &-box > li + li:before {
+        padding: 0 5px;
+        color: #ccc;
+        content: "/\00a0";
+    }
+
+    &-box a {
+        color: var(--color-basic-black);
+        font-size: 1.6rem;
+    }
+
+    &__img {
+        width: 100vw;
+        height: 400px;
+        display: block;
+        margin-top: 90px;
+    }
+}
+
+.banner-inner.hideUp {
+    top: -80px;
+}

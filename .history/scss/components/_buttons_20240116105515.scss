@@ -1,0 +1,72 @@
+.btn {
+    white-space: nowrap;
+    overflow: hidden;
+
+    &__service-item {
+        width: 10%;
+        min-width: 110px;
+        height: 35px;
+        float: right;
+        // margin-right: 210px;
+        color: #fff;
+        background-color: var(--color-primary);
+        border-radius: 10px;
+        border: 1px solid #ffffff;
+    }
+
+    &__apply-bro {
+        width: 30%;
+        height: 70px;
+        color: #fff;
+        background-color: var(--color-primary);
+        border-radius: 10px;
+        border: 1px solid #ffffff;
+        font-size: x-large;
+        margin: 150px;
+    }
+
+    &-contact {
+        width: 20%;
+        height: 50px;
+        color: #fff;
+        background-color: var(--color-primary);
+        border-radius: 10px;
+        border: 1px solid #ffffff;
+        font-size: inherit;
+        margin: 30px 40%;
+    }
+
+    &__summary {
+        width: 20%;
+        min-width: 100px;
+        border: 1px solid #d4d4d4;
+        color: var(--color-basic-black);
+        background: #f0f0f0;
+        border-radius: 5px;
+        height: 30px;
+        font-size: large;
+    }
+
+    &__read-more {
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+        border: 1px solid;
+        width: 10%;
+        min-width: 100px;
+        min-height: 25px;
+        border-radius: 5px;
+        background: var(--color-basic-bg);
+        font-size: medium;
+    }
+
+    &__job-detail {
+        background: #337bb9;
+        color: #ffffff;
+        width: 30%;
+        min-width: 25%;
+        height: 50px;
+        font-size: large;
+        border-radius: 5px;
+    }
+}

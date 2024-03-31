@@ -1,0 +1,33 @@
+.table {
+    &-history {
+        & table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        &__row {
+            border-top: 1px solid rgb(114, 113, 113);
+
+            &:last-child {
+                border-bottom: 1px solid rgb(114, 113, 113);
+            }
+
+            &-col {
+                background: #fff;
+            }
+        }
+    }
+
+    &-kitting {
+        border: 1px solid #e2e2f9;
+        width: 100%;
+
+        & tr:first-child {
+            padding: px 10px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1.9rem;
+            line-height: 4.2rem;
+        }
+    }
+}

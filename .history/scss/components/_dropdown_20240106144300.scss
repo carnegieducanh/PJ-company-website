@@ -1,0 +1,15 @@
+.dropdown {
+    &__inner {
+        position: absolute;
+        background-color: #e8e8e8;
+        color: #000;
+        border: 0px solid rgba(0, 0, 0, 0.15);
+        border-radius: 0px;
+        box-shadow: 0 0px 0px rgb(0 0 0 / 18%);
+        top: 85px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 470px;
+    }
+}

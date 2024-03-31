@@ -1,0 +1,38 @@
+.service-item {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    margin: 60px 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    // width: calc(33.33333333% - 30px);
+    width: 100vw;
+
+    &__thumb {
+        width: 250px;
+        height: 188px;
+        // Dùng dp block để loại bỏ viền dưới ảnh
+        // Hoặc: vehicle: inline;
+        display: block;
+    }
+
+    &__info {
+        padding-right: 25px;
+        padding-left: 25px;
+        text-align: justify;
+        background-color: #e8e8e8;
+
+        & h3 {
+            // color: #fff;
+            // font-size: 2.4rem;
+            // font-weight: 500;
+            // line-height: 1.6;
+            // padding-top: 20px;
+            font-size: 1.6rem;
+
+            padding: 20px 21px;
+            height: 100px;
+        }
+    }
+}

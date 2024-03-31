@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Repair</title>
+        <!-- Favicon -->
+
+        <!-- Font -->
+        <link rel="stylesheet" href="../../assets/fonts/stylesheet.css" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="../../assets/js/scripts-1.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- Banner -->
+        <div class="banner">
+            <img
+                src="../../../assets/img/banner-img.png"
+                alt=""
+                class="banner__img"
+            />
+            <div class="banner-inner">
+                <div class="row">
+                    <div class="container">
+                        <ul class="banner-box">
+                            <li class="banner-box__item">
+                                <a href="/">Home</a>
+                            </li>
+                            <li class="banner-box__item">
+                                <a href="./about-co-info.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <main class="content-container">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Us info -->
+                    <div class="contact-us">
+                        <div class="general-info">
+                            <h2 class="general-info__title">Contact Us</h2>
+                            <div class="general-info__inner">
+                                <div class="content contact-us__content">
+                                    <p class="content-title">
+                                        For inquiries about corporate profile,
+                                        services and career, please select the
+                                        appropriate category and contact us.
+                                        Please not depending on the content of
+                                        the inquiry, it might take some time to
+                                        response, or it might not be possible to
+                                        respond.
+                                    </p>
+                                    <div class="contact-us__form">
+                                        <table class="contact-us__table">
+                                            <tbody>
+                                                <tr class="row">
+                                                    <td class="col-3">
+                                                        <label
+                                                            for="select"
+                                                            class="contact-us__form-label"
+                                                            >Category</label
+                                                        >
+                                                    </td>
+                                                    <td class="col-9">
+                                                        <select
+                                                            name=""
+                                                            id="select"
+                                                            class="contact-us__form-input"
+                                                        >
+                                                            <option>
+                                                                Corporate
+                                                                Profile
+                                                            </option>
+                                                            <option>
+                                                                Services
+                                                            </option>
+                                                            <option>
+                                                                Career
+                                                            </option>
+                                                            <option>
+                                                                Other
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row">
+                                                    <td class="col-3">
+                                                        <label
+                                                            for="select"
+                                                            class="contact-us__form-label"
+                                                            >Given name</label
+                                                        >
+                                                    </td>
+                                                    <td class="col-9">
+                                                        <input
+                                                            type="text"
+                                                            class="contact-us__form-input"
+                                                        />
+                                                    </td>
+                                                </tr>
+                                                <tr class="row">
+                                                    <td class="col-3">
+                                                        <label
+                                                            for="select"
+                                                            class="contact-us__form-label"
+                                                            >Family name</label
+                                                        >
+                                                    </td>
+                                                    <td class="col-9">
+                                                        <input
+                                                            type="text"
+                                                            class="contact-us__form-input"
+                                                        />
+                                                    </td>
+                                                </tr>
+                                                <tr class="row">
+                                                    <td class="col-3">
+                                                        <label
+                                                            for="select"
+                                                            class="contact-us__form-label"
+                                                            >Email
+                                                            address</label
+                                                        >
+                                                    </td>
+                                                    <td class="col-9">
+                                                        <input
+                                                            type="email"
+                                                            id="email"
+                                                            class="contact-us__form-input"
+                                                        />
+                                                    </td>
+                                                </tr>
+                                                <tr class="row">
+                                                    <td class="col-3">
+                                                        <label
+                                                            for="select"
+                                                            class="contact-us__form-label"
+                                                            >Corporate name<br />
+                                                            (if needed)
+                                                        </label>
+                                                    </td>
+                                                    <td class="col-9">
+                                                        <input
+                                                            type="text"
+                                                            class="contact-us__form-input"
+                                                        />
+                                                    </td>
+                                                </tr>
+                                                <tr class="row">
+                                                    <td class="col-3">
+                                                        <label
+                                                            for="select"
+                                                            class="contact-us__form-label"
+                                                            >Subject
+                                                        </label>
+                                                    </td>
+                                                    <td class="col-9">
+                                                        <input
+                                                            type="text"
+                                                            class="contact-us__form-input"
+                                                        />
+                                                    </td>
+                                                </tr>
+                                                <tr class="row">
+                                                    <td class="col-3">
+                                                        <label
+                                                            for="select"
+                                                            class="contact-us__form-label"
+                                                            >Inquiry content
+                                                        </label>
+                                                    </td>
+                                                    <td class="col-9">
+                                                        <textarea
+                                                            name="content"
+                                                            id="content"
+                                                            cols="30"
+                                                            rows="10"
+                                                            class="contact-us__form-texarea"
+                                                        ></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row">
+                                                    <td class="col-3">
+                                                        <label
+                                                            for="select"
+                                                            class="contact-us__form-label"
+                                                            >Privacy Policy
+                                                        </label>
+                                                    </td>
+                                                    <td class="col-9">
+                                                        <textarea
+                                                            name="content"
+                                                            id="content"
+                                                            cols="30"
+                                                            rows="10"
+                                                            class="contact-us__form-texarea"
+                                                        >
+Pegatron Japan Inc.
+Personal Information Handling Agreement
+
+Pegatron Japan Inc.  (hereinafter referred to as "the Company") will be entrusted with the personal information of our customers.  The Company has established the following policy regarding the handling of personal information and is committed to protecting such information. The Company wil make every effort to protect your personal information as follows.
+
+Purpose of use
+1) To respond to inquiries and provide necessary informations.
+2) To respond to requests for information materials.
+
+Provision of Personal Information to Third Parties
+The Company will not distribute your personal information to any third party without your consent, except as required by law.
+
+Outsourcing of Personal Information Handling Operations
+In order to provide better service to our customers, we outsource a part of our business operations, and we may entrust personal information of our customers to a subcontractor. In such cases, we select contractors that are deemed to handle personal information appropriately, and we require them to implement appropriate management of personal information by stipulating in contracts and other agreements the matters necessary to prevent leaks of customers' personal information through appropriate management and maintenance of confidentiality.
+
+Voluntary nature of providing personal information
+The provision of personal information by the customer to the Company is voluntary.
+However, if you do not provide us with personal information, we may not be able to meet your requests or provide you with our services. However, please understand that if you do not provide personal information, we may not be able to reply to you or provide our services.
+
+Requests for Disclosure of Personal Information
+You have the right to request notification of the purpose of use, disclosure, correction, addition, deletion, and right to refuse use or provision of your personal information. For more information, please contact the following office or see "Handling of Personal Information".
+
+Personal Information Inquiry Contact:  Sumihiko Kawahara Tel: +81-(0)3-5665-1820
+Personal Information Protection Manager:  Eli Liu Zhaoyuan     
+                                                        </textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row">
+                                                    <td class="col-3"></td>
+                                                    <td class="col-9">
+                                                        <input
+                                                            type="checkbox"
+                                                            id="agree-checkbook"
+                                                            class="contact-us__checkbook"
+                                                        />
+                                                        <label
+                                                            for="select"
+                                                            class="contact-us__checkbook"
+                                                        >
+                                                            I agree</label
+                                                        >
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        name="submit"
+                                        value="submit"
+                                        class="btn btn__job-detail"
+                                    >
+                                        Send
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <!-- Scripts -->
+        <script src="../../assets/js/scripts-2.js"></script>
+        <script src="../../assets/js/scripts-3.js"></script>
+        <script src="../../assets/js/scripts-6.js"></script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+.philosophy {
+    &__content p {
+        font-size: 1.7rem;
+        line-height: 1.9;
+    }
+
+    &__content-table {
+        width: 70%;
+        margin-top: 30px;
+
+        & th,
+        td {
+            padding: 5px 10px;
+        }
+    }
+}

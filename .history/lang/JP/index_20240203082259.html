@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="jpg">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pegatron</title>
+        <!-- Favicon -->
+
+        <!-- Font -->
+        <link rel="stylesheet" href="../../assets/fonts/stylesheet.css" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="../../assets/js/scripts-1.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- Main -->
+        <main class="page-contents">
+            <!-- Slide Show -->
+            <div class="swiper-slide">
+                <div class="swiper-slide__list">
+                    <div class="swiper-slide__list-item">
+                        <img
+                            src="../../assets/img/swiper-slide/swiper-slide 1.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="swiper-slide__list-item">
+                        <img
+                            src="../../assets/img/swiper-slide/swiper-slide 2.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="swiper-slide__list-item">
+                        <img
+                            src="../../assets/img/swiper-slide/swiper-slide 3.jpg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="swiper-slide__buttons">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+                <ul class="swiper-slide__dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <!-- Slide Show-Content -->
+            <section class="swiper-slide__title">
+                <h1 class="swiper-slide__title-slogan">
+                    The Future of Solutions
+                </h1>
+                <h2 class="swiper-slide__title-content">
+                    Your Trusted IT Service Provider
+                </h2>
+                <p>
+                    お客様のご要望に柔軟に対応し<br />
+                    世界レベルのサービスを提供いたします。
+                </p>
+                <h2 class="swiper-slide__title-content">
+                    Working Towards a Greener Planet
+                </h2>
+                <p>
+                    お客様とともに <br />
+                    緑に満ちた地球をつくりあげます。
+                </p>
+                <h2 class="swiper-slide__title-content">
+                    Local Service with Global Perspective
+                </h2>
+                <p>
+                    様々な経験やノウハウを融合させ <br />
+                    お客様から信頼されるサービスを提供します。
+                </p>
+            </section>
+
+            <!-- Video show -->
+            <section class="video-content">
+                <video
+                    class="video-content__show"
+                    autoplay=""
+                    muted=""
+                    loop=""
+                    src="../../assets/video/Pegatron Japan Inc.mp4"
+                ></video>
+
+                <div class="video-content__title">
+                    <h2 class="video-content__solution">
+                        We are "Solution Provider"
+                    </h2>
+
+                    <p>
+                        当社は、親会社であるパソコン・スマートフォン受託生産グローバル大手のPegatron
+                        Corporationが世界各地の製造拠点で培ったノウハウを流用し、お客様の課題やご要望に真摯に寄り添い、信頼のおける各種サービスを提供いたします。
+                        <br /><br />
+
+                        当社はCX（Customer
+                        Experience）の向上を経営の最重要課題と認識し、日々変化するお客様のご要望に臨機応変かつスピーディに対応し、価値を創造してまいりました。
+
+                        <br /><br />
+
+                        当社は、これまでに国内外の大手パソコン、スマートフォンメーカー様から多くの表彰を獲得しております。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Service detail -->
+            <section class="container">
+                <div class="row service">
+                    <!-- Service item 1 -->
+                    <article class="service-item">
+                        <a href="#!" class="service-item__repair">
+                            <img
+                                src="../../assets/img/service item/service-shuuri.jpg"
+                                alt=""
+                                class="service-item__thumb"
+                            />
+                        </a>
+                        <a href="./services-repair.html">
+                            <section class="service-item__info">
+                                <h3 class="service-item__title">
+                                    修理サービス （Repair）
+                                </h3>
+                                <p class="service-item__desc">
+                                    パソコン、モバイル端末の修理はペガトロン・ジャパン設立以来のサービスです。
+                                    経験豊富な国内外の熟練技術者による正確な故障診断、適切、かつスピーディなパーツ交換、
+                                    専用テストツールによる修理品質の担保を通して、お客様にご満足いただけるサービスを提供いたします。
+                                </p>
+                                <button
+                                    class="btn btn__service-item"
+                                    onclick="window.location='./services-repair.html'"
+                                >
+                                    詳細
+                                </button>
+                            </section>
+                        </a>
+                    </article>
+
+                    <!-- Service item 2 -->
+                    <article class="service-item">
+                        <a href="#!">
+                            <img
+                                src="../../assets/img/service item/service-kitting.jpg"
+                                alt=""
+                                class="service-item__thumb"
+                            />
+                        </a>
+                        <a href="./service-kitting.html">
+                            <section class="service-item__info">
+                                <h3 class="service-item__title">
+                                    キッティング （Kitting）
+                                </h3>
+                                <p class="service-item__desc">
+                                    キッティングとは、パソコンやモバイル端末などの新規導入時に、お客様のご要望に応じて
+                                    OSや必要なソフトウェアのインストール、社内ネットワークへの接続設定を行い、使用者が
+                                    パソコンの電源を入れれば、直ちに業務に使える状態にする作業です。
+                                </p>
+                                <button
+                                    class="btn btn__service-item"
+                                    onclick="window.location='./service-kitting.html'"
+                                >
+                                    詳細
+                                </button>
+                            </section>
+                        </a>
+                    </article>
+
+                    <!-- Service item 3 -->
+                    <article class="service-item">
+                        <a href="#!">
+                            <img
+                                src="../../assets/img/service item/service-LifeCycle.jpg"
+                                alt=""
+                                class="service-item__thumb"
+                            />
+                        </a>
+                        <a href="./service-LCM.html">
+                            <section class="service-item__info">
+                                <h3 class="service-item__title">
+                                    LCM サービス （Life Cycle Management）
+                                </h3>
+                                <p class="service-item__desc">
+                                    パソコンの調達から廃棄に至るPCLCM
+                                    サービスの一元管理は、企業、団体、自治体にとって、TCO(※1)を抑制するため、
+                                    喫緊の課題であり、今後、加速度的な拡大が見込まれています。
+                                </p>
+                                <button
+                                    class="btn btn__service-item"
+                                    onclick="window.location='./service-LCM.html'"
+                                >
+                                    詳細
+                                </button>
+                            </section>
+                        </a>
+                    </article>
+
+                    <!-- Service item 4 -->
+                    <article class="service-item">
+                        <a href="#!">
+                            <img
+                                src="../../assets/img/service item/service-buzai.jpg"
+                                alt=""
+                                class="service-item__thumb"
+                            />
+                        </a>
+                        <a href="./service-parts-supply.html">
+                            <section class="service-item__info">
+                                <h3 class="service-item__title">
+                                    部品調達 （Parts Supply）
+                                </h3>
+                                <p class="service-item__desc">
+                                    ペガトロングループの受託生産工場は、グローバル大手パソコン、スマオートフォンブラン向けに、月間200万枚のマザーボード、
+                                    10万台のノートパソコンの製造能力を誇ります。これらIT機器の生産に必要不可欠な半導体IC、電子部品は、
+                                    中国を中心とした世界各地のサプライチェーンを介して調達可能です。
+                                </p>
+                                <button
+                                    class="btn btn__service-item"
+                                    onclick="window.location='./service-parts-supply.html'"
+                                >
+                                    詳細
+                                </button>
+                            </section>
+                        </a>
+                    </article>
+
+                    <!-- Service item 5 -->
+                    <article class="service-item">
+                        <a href="#!">
+                            <img
+                                src="../../assets/img/service item/service-resale.jpg"
+                                alt=""
+                                class="service-item__thumb"
+                            />
+                        </a>
+                        <a href="./service-refurbish.html">
+                            <section class="service-item__info">
+                                <h3 class="service-item__title">
+                                    再生・再販 （Refurbish・Resell）
+                                </h3>
+                                <p class="service-item__desc">
+                                    新品出荷時と同等レベルまでの修理再生が可能です。店舗からの初期不良交換品、返品、輸送中の化粧箱ダメージ品、
+                                    突発的なリワークが必要な製品を、短納期で対応が可能です。再生商品の再販サービスにも対応いたします。
+                                </p>
+                                <button
+                                    class="btn btn__service-item"
+                                    onclick="window.location='./service-refurbish.html'"
+                                >
+                                    詳細
+                                </button>
+                            </section>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- intro page -->
+            <section class="special">
+                <div class="special-intro">
+                    <img
+                        src="../../assets/img/special.jpg"
+                        alt=""
+                        class="special__thumb"
+                    />
+                    <div class="special__title">
+                        <div class="special__desc">
+                            <h2 class="special__desc-header">
+                                What makes us special
+                            </h2>
+                            <p>
+                                Over
+                                <span class="special__desc-big"> 20</span>
+                                year<br />Rich history
+                            </p>
+                            <p>
+                                <span class="special__desc-big">10,000</span>
+                                <br />Monthly Repairs
+                            </p>
+                            <p>
+                                <span class="special__desc-big"
+                                    >Global Major</span
+                                >
+                                <br />Repair service provider
+                            </p>
+                            <p>
+                                <span class="special__desc-big"
+                                    >Best Customer Experience Award</span
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- apply browser -->
+            <section class="apply-bro">
+                <h2 class="apply-bro__header">Join Us !</h2>
+                <div class="apply-bro__content">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="apply-bro__title">
+                                Would you like to work with us?
+                            </h3>
+                            <button
+                                class="btn btn__apply-bro"
+                                onclick="window.location='./career-open-positions.html'"
+                            >
+                                APPLY NOW
+                            </button>
+                        </div>
+                        <div class="col">
+                            <img
+                                src="../../assets/img/apply-JoinUs.jpg"
+                                alt=""
+                                class="apply-bro__thumb"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <!-- Scripts -->
+        <script src="../../assets/js/scripts-2.js"></script>
+        <!-- <script src="../../assets/js/scripts-5.js"></script> -->
+        <script src="../../assets/js/scripts-6.js"></script>
+    </body>
+</html>

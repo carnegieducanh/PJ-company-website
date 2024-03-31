@@ -1,0 +1,27 @@
+.sidenav {
+    &__list {
+        margin: 100px 0px;
+        // display: flex;
+
+        // justify-content: center;
+        // flex-direction: column;
+
+        &-group {
+            margin-bottom: 30px;
+            font-size: 2.4rem;
+            color: #333;
+            font-weight: 400;
+        }
+
+        &-item a {
+            height: 50px;
+            display: block;
+            white-space: nowrap;
+
+            &:hover {
+                color: var(--color-primary);
+                background-color: #dedede;
+            }
+        }
+    }
+}

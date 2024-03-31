@@ -1,0 +1,54 @@
+@use "../abstracts";
+.culture {
+    align-items: center;
+    &-item {
+        border-top: 1px solid var(--color-basic-bg);
+        padding: 30px 0;
+        position: relative;
+
+        &:last-child {
+            border-bottom: 1px solid var(--color-basic-bg);
+            margin-bottom: 50px;
+        }
+
+        &__img {
+            width: 270px;
+            height: 150px;
+            box-shadow: -2px 3px 5px 0px rgba(110, 108, 108, 0.45);
+            // object-fit: cover;
+
+            @include abstracts.screen(md) {
+                width: 100%;
+            }
+        }
+        &__title {
+            font-size: large;
+            color: var(--text-color);
+            font-weight: bold;
+        }
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 15px;
+            margin-left: -40px;
+
+            @include abstracts.screen(xxl) {
+                margin-left: 5px;
+            }
+            @include abstracts.screen(lg) {
+                margin-left: 55px;
+            }
+            @include abstracts.screen(md) {
+                margin: 0;
+            }
+        }
+
+        &__detail {
+            line-height: 1.5;
+            min-width: 400px;
+            text-align: justify;
+        }
+    }
+}

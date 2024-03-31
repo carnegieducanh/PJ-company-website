@@ -1,0 +1,104 @@
+@use "../abstracts";
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar-pegatron {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 0;
+    padding: 16px;
+    width: 100vw;
+}
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @include abstracts.screen(lg) {
+        display: none;
+    }
+
+    &-lang {
+        padding: 50px 0px;
+    }
+
+    &__menu {
+        display: flex;
+        padding-left: 170px;
+        color: #303030;
+        @include abstracts.screen(xxl) {
+            padding-left: 60px;
+        }
+
+        &-lang {
+            margin-right: 75px;
+            padding: 50px 0px;
+        }
+
+        &-lang:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__dropdown:hover .dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &-link {
+        padding: 35px 25px;
+        font-size: 20px;
+    }
+}
+
+.navbar-band {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    &__service {
+        width: 150px;
+        height: 30px;
+
+        @include abstracts.screen(lg) {
+            display: none;
+        }
+    }
+}
+
+.toggle {
+    &__icon {
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+    }
+
+    &__menu {
+        display: none;
+        @include abstracts.screen(lg) {
+            display: block;
+        }
+        &--drawer {
+            position: fixed;
+            inset: 8% 0;
+            background: var(--color-basic-bg);
+            z-index: 2;
+        }
+    }
+}

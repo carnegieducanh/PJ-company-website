@@ -1,0 +1,54 @@
+@use "../abstracts";
+
+.position {
+    align-items: center;
+    padding-bottom: 20px;
+
+    &-item {
+        border-top: 1px solid var(--color-basic-bg);
+        padding: 20px;
+
+        @include abstracts.screen(lg) {
+            padding: 20px 0;
+        }
+        &__img {
+            width: 270px;
+            height: 150px;
+            box-shadow: -2px 3px 5px 0px rgba(110, 108, 108, 0.45);
+
+            @include abstracts.screen(lg) {
+                width: 255px;
+            }
+        }
+        &__title {
+            font-size: large;
+            color: var(--text-content-title);
+            font-weight: bold;
+            font-family: japanese_font;
+        }
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            gap: 15px;
+            margin-left: -40px;
+            height: 100%;
+
+            @include abstracts.screen(xxl) {
+                margin-left: 20px;
+            }
+            @include abstracts.screen(lg) {
+                margin-left: 60px;
+            }
+        }
+
+        &__detail {
+            line-height: 1.5;
+            min-width: 400px;
+            text-align: justify;
+            font-family: japanese_font;
+        }
+    }
+}

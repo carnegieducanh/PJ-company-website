@@ -1,0 +1,93 @@
+@use "../abstracts";
+
+.dropdown {
+    // display: none;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s linear;
+
+    &__inner {
+        position: absolute;
+        background-color: #e8e8e8;
+        top: 85px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 400px;
+        z-index: 99;
+    }
+
+    &__menu li:first-child a {
+        border-top: 1px solid #b9b9b9;
+
+        @include abstracts.screen(lg) {
+            border: none;
+        }
+    }
+
+    &__menu {
+        padding-top: 40px;
+        padding-left: 25%;
+
+        @include abstracts.screen(lg) {
+            // display: none;
+            // transition: visibility 1s;
+            visibility: hidden;
+            margin-left: -280px;
+            margin-top: -20px;
+        }
+
+        @include abstracts.screen(xxl) {
+            padding-left: 300px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 5%;
+            top: -3px;
+            right: auto;
+            left: var(--arrow-left-pos);
+            translate: -50%;
+            height: 4px;
+            background: #a69060;
+
+            @include abstracts.screen(lg) {
+                display: none;
+            }
+        }
+
+        & li a {
+            border-bottom: 1px solid #b9b9b9;
+            padding: 10px 18px 8px 18px;
+            position: relative;
+            white-space: initial;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.42857143;
+            color: #333;
+
+            @include abstracts.screen(lg) {
+                width: 100%;
+                border: none;
+            }
+
+            & img {
+                width: 30px;
+                height: 30px;
+            }
+
+            &:hover {
+                color: var(--color-primary);
+                background-color: #dedede;
+            }
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        width: 20%;
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Repair</title>
+        <!-- Favicon -->
+
+        <!-- Font -->
+        <link rel="stylesheet" href="../../assets/fonts/stylesheet.css" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="../../assets/js/scripts-1.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- Banner -->
+        <div class="banner">
+            <img
+                src="../../../assets/img/banner-img.png"
+                alt=""
+                class="banner__img"
+            />
+            <div class="banner-inner">
+                <div class="row">
+                    <div class="container">
+                        <ul class="banner-box">
+                            <li class="banner-box__item">
+                                <a href="/">Home</a>
+                            </li>
+                            <li class="banner-box__item">
+                                <a href="">Services</a>
+                            </li>
+                            <li class="banner-box__item">
+                                <a href="./about-co-info.html"> Repair </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <main class="content-container">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Us info -->
+                    <div class="contact-us">
+                        <div class="general-info">
+                            <h2 class="general-info__title">Repair</h2>
+                            <div class="general-info__inner">
+                                <div class="content contact-us__content">
+                                    <p class="content-title">
+                                        For inquiries about corporate profile,
+                                        services and career, please select the
+                                        appropriate category and contact us.
+                                        Please not depending on the content of
+                                        the inquiry, it might take some time to
+                                        response, or it might not be possible to
+                                        respond.
+                                    </p>
+                                    <div class="contact-us__form">
+                                        <table class="contact-us__table">
+                                            <tbody>
+                                                <tr class="row contact-us__row">
+                                                    <td class="col-3">
+                                                        <label for="select"
+                                                            >Category</label
+                                                        >
+                                                    </td>
+                                                    <td class="col-9">
+                                                        <select
+                                                            name=""
+                                                            id="select"
+                                                            class="contact-us__form-input"
+                                                        >
+                                                            <option value="">
+                                                                Profile
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button class="btn-contact">
+                                        Contact Us
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <!-- Scripts -->
+        <script src="../../assets/js/scripts-2.js"></script>
+        <script src="../../assets/js/scripts-3.js"></script>
+        <script src="../../assets/js/scripts-6.js"></script>
+    </body>
+</html>

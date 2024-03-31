@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Open Positions</title>
+        <!-- Favicon -->
+
+        <!-- Font -->
+        <link rel="stylesheet" href="../../assets/fonts/stylesheet.css" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="../../assets/js/scripts-1.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <!-- Banner -->
+        <div class="banner">
+            <img
+                src="../../assets/img/career-banner.jpg"
+                alt=""
+                class="banner__img"
+            />
+            <div class="banner-inner">
+                <div class="row">
+                    <div class="container">
+                        <ul class="banner-box">
+                            <li class="banner-box__item">
+                                <a href="/">Home</a>
+                            </li>
+                            <li class="banner-box__item">
+                                <a href="">Career</a>
+                            </li>
+                            <li class="banner-box__item">
+                                <a href="./career-open-positions.html">
+                                    Open Positions
+                                </a>
+                            </li>
+                            <li class="banner-box__item">
+                                <a href="./job-detail-01.html"> Job detail </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <main class="content-container">
+            <div class="container">
+                <div class="row">
+                    <!-- side nav -->
+                    <div class="col-3">
+                        <div class="sidenav">
+                            <div class="sidenav__list">
+                                <span class="sidenav__list-group">
+                                    Career
+                                </span>
+                                <ul>
+                                    <li class="sidenav__list-item">
+                                        <a
+                                            href="./career-open-positions.html"
+                                            class="sidenav-item__link"
+                                        >
+                                            Open Positions
+                                        </a>
+                                    </li>
+
+                                    <li
+                                        class="sidenav__list-item current-active"
+                                    >
+                                        <a
+                                            href="./job-detail-01.html"
+                                            class="sidenav-item__link"
+                                        >
+                                            Job detail
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Job detail info -->
+                    <div class="col-9">
+                        <div class="general-info">
+                            <h2 class="general-info__title">Job detail</h2>
+                            <p class="position-item__title">ITエンジニア</p>
+                        </div>
+                        <table
+                            class="table table__row table__row-col table-job"
+                        >
+                            <tbody>
+                                <tr class="table__row table-job">
+                                    <td
+                                        class="table__row-col table-job__row-col"
+                                    >
+                                        雇用形態
+                                    </td>
+                                    <td
+                                        class="table__row-col table-job__row-col"
+                                    >
+                                        契約社員　(正社員への登用あり)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <!-- Scripts -->
+        <script src="../../assets/js/scripts-2.js"></script>
+        <script src="../../assets/js/scripts-3.js"></script>
+        <script src="../../assets/js/scripts-6.js"></script>
+    </body>
+</html>

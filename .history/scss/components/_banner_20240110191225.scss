@@ -1,0 +1,15 @@
+.banner {
+    &-box > li + li:before {
+        padding: 0 5px;
+        color: #ccc;
+        content: "/";
+    }
+
+    &__img {
+        width: 100%;
+        height: 500px;
+    }
+
+    &__item {
+    }
+}

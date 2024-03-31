@@ -1,0 +1,25 @@
+.special {
+    position: relative;
+
+    &-intro__title {
+        width: 700px;
+        max-width: 60%;
+        height: auto;
+        background-color: var(--color-primary);
+        border-radius: 20px;
+        z-index: 1;
+        opacity: 0.5;
+        overflow: hidden;
+        padding: 30px 10px;
+        margin: auto;
+        position: absolute;
+        top: 150px;
+        right: 0;
+    }
+
+    &__thumb {
+        width: 100vw;
+        height: 700px;
+        object-fit: cover;
+    }
+}

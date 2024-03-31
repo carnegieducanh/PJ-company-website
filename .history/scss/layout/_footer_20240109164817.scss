@@ -1,0 +1,36 @@
+.footer {
+    padding: 50px 0;
+    background: var(--cplor-basic-bg);
+
+    &__inner {
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 1.9rem;
+    }
+
+    &__list {
+        & li:first-child {
+            padding-top: 30px;
+        }
+    }
+
+    &__link {
+        line-height: 1.4;
+        font-size: 16px;
+        padding: 6px 0 7px 0;
+        display: inline-block;
+        color: var(--color-basic-black);
+
+        &:hover {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-band {
+    display: inline-block;
+    &__service {
+        width: 100px;
+        height: 30px;
+    }
+}

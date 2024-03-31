@@ -1,0 +1,26 @@
+.sidenav {
+    &__list {
+        margin: 100px 0px;
+        padding-left: 10%;
+
+        &-group {
+            display: inline-block;
+            margin-bottom: 30px;
+            font-size: 2.4rem;
+            color: #333;
+            font-weight: 400;
+        }
+
+        &-item:hover {
+            color: var(--color-primary);
+            background-color: #dedede;
+            width: 200px;
+        }
+        & a {
+            // height: 50px;
+            display: inline-block;
+            white-space: nowrap;
+            padding: 15px 0;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.culture {
+    align-items: center;
+    padding-bottom: 30px;
+    &-item {
+        border-top: 1px solid var(--color-basic-bg);
+        padding-bottom: 30px;
+        position: relative;
+
+        &__img {
+            width: 270px;
+            height: 150px;
+            box-shadow: -2px 3px 5px 0px rgba(110, 108, 108, 0.45);
+            // object-fit: cover;
+        }
+        &__title {
+            font-size: large;
+            color: var(--text-content-title);
+            font-weight: bold;
+        }
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 15px;
+            margin-left: -40px;
+        }
+
+        &__detail {
+            line-height: 1.5;
+            min-width: 400px;
+            text-align: justify;
+        }
+    }
+}

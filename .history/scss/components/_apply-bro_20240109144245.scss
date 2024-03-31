@@ -1,0 +1,9 @@
+.apply-bro {
+    background: var(--color-basic-bg);
+
+    &__thumb {
+        width: 100%;
+        min-width: 360px;
+        height: 570px;
+    }
+}

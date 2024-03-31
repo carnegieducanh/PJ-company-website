@@ -1,0 +1,15 @@
+.special {
+    // background: var(--color-basic-bg);
+
+    &-intro {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__thumb {
+        width: 100vw;
+        height: 700px;
+        object-fit: cover;
+    }
+}

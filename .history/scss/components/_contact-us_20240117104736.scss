@@ -1,0 +1,36 @@
+.contact-us {
+    margin: 0 150px;
+    &__table {
+        width: 100%;
+    }
+
+    &__row {
+        width: 100%;
+        gap: 30px;
+    }
+
+    &__content p {
+        text-align: justify;
+        font-weight: normal;
+    }
+
+    &__form {
+        width: 70%;
+        padding-top: 20px;
+        margin: 0 auto;
+
+        &-label {
+            display: block;
+            padding: 7px 0;
+        }
+
+        &-input {
+            color: var(--text-color);
+            border: 1px solid rgb(177, 170, 170);
+            width: 91.5%;
+            height: 30px;
+            vertical-align: middle;
+            font-size: 1.6rem;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-band {
+    display: inline-block;
+    &__service {
+        width: 150px;
+        height: 30px;
+    }
+}
+
+.navbar-nav {
+    width: 100%;
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

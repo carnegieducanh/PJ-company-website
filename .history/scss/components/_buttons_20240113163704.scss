@@ -1,0 +1,23 @@
+.btn {
+    &-contact {
+        width: 20%;
+        height: 50px;
+        color: #fff;
+        background-color: var(--color-primary);
+        border-radius: 10px;
+        border: 1px solid #ffffff;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: inherit;
+        margin: 30px 40%;
+    }
+
+    &__summary {
+        width: 20%;
+        min-width: 100px;
+        border: 1px solid var(--line_color);
+        color: var(--color-basic-bg);
+        border-radius: 5px;
+        height: 30px;
+    }
+}

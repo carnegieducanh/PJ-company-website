@@ -1,0 +1,46 @@
+.banner {
+    &-inner {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: rgba(232, 232, 232, 0.95);
+        transition: top ease 0.3s;
+    }
+
+    &-box {
+        display: flex;
+        align-items: center;
+        padding: 15px 8px;
+        background-color: transparent;
+        margin-bottom: 0;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    &-box > li + li:before {
+        padding: 0 5px;
+        color: #ccc;
+        content: "/\00a0";
+    }
+
+    &-box a {
+        color: var(--color-basic-black);
+        font-size: 1.6rem;
+    }
+
+    &__img {
+        width: 100vw;
+        height: 400px;
+        display: block;
+    }
+
+    &__item {
+    }
+}
+
+.banner-box.hideUp {
+    // display: none;
+    opacity: 0;
+}

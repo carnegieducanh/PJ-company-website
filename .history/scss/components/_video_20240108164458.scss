@@ -1,0 +1,10 @@
+.video-content {
+    &__show {
+        position: relative;
+        width: 100vw;
+        height: 700px;
+        margin: auto;
+        overflow: hidden;
+        object-fit: cover;
+    }
+}

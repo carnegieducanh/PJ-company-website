@@ -1,0 +1,23 @@
+.sidenav {
+    &__list {
+        margin: 100px 0px;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        &-group {
+            margin: 20px 0;
+            font-size: 2.4rem;
+            color: #333;
+            font-weight: 400;
+        }
+
+        &-item a {
+            height: 70px;
+            display: block;
+            // white-space: nowrap;
+            gap: 30px;
+        }
+    }
+}

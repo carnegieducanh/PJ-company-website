@@ -1,0 +1,15 @@
+.special {
+    background: #e8e8e8;
+
+    &-intro {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__thumb {
+        min-width: 360px;
+        height: 570px;
+        width: 60vw;
+    }
+}

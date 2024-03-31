@@ -1,0 +1,16 @@
+// hide-show content
+const more = document.querySelectorAll(".btn");
+const show = document.querySelectorAll(".hide-show");
+let isExpanded = false;
+[...more].forEach((itemBtn) =>
+    itemBtn.addEventListener("click", handleClickBtn)
+);
+function handleClickBtn(e) {
+    // [...show].forEach((itemShow) => {
+    const parentDiv = e.target.closest(".hide-show");
+
+    parentDiv.classList.toggle("expanded", !isExpanded);
+    // e.target.classList.toggle("expanded", !isExpanded);
+    isExpanded = !isExpanded;
+    e.target.textContent = isExpanded ? "See less" : "See more";
+}

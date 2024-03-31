@@ -1,0 +1,96 @@
+.dropdown {
+    display: none;
+
+    &__inner {
+        position: absolute;
+        background-color: #e8e8e8;
+        color: #000;
+        border: 0px solid rgba(0, 0, 0, 0.15);
+        border-radius: 0px;
+        box-shadow: 0 0px 0px rgb(0 0 0 / 18%);
+        top: 85px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 470px;
+        transition-delay: 0.7s;
+    }
+
+    &__menu li:first-child a {
+        border-top: 1px solid #b9b9b9;
+    }
+
+    &__menu {
+        padding-top: 40px;
+        padding-left: 500px;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 4% !important;
+            top: -5px;
+            right: auto;
+            left: var(--arrow-left-pos);
+            translate: -50%;
+            height: 4px;
+            background: #a69060;
+        }
+
+        & li a {
+            border-bottom: 1px solid #b9b9b9;
+            padding: 10px 18px 8px 18px;
+            position: relative;
+            white-space: initial;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.42857143;
+            color: #333;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        width: 17%;
+    }
+}
+
+.navbar {
+    &__menu-lang {
+        position: relative;
+        height: 34px;
+        width: 0;
+        line-height: 32px;
+        padding: 0 100px 0 19px;
+        border: 1px solid var(--color-basic-black);
+        border-radius: 21px;
+
+        & .nav-link {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__dropdown-arr {
+        display: inline-block;
+        background: url(https://www.pegatroncorp.com/frontend/img/dropdown.png)
+            no-repeat 100% 50% / 15px auto;
+        width: 34px;
+        height: 19px;
+        position: absolute;
+        top: 6px;
+        right: 15px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 19px;
+            width: 1px;
+            margin-left: 7px;
+            background-color: var(--color-basic-black);
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

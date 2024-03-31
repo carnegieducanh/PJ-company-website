@@ -1,0 +1,14 @@
+.environment {
+    &__group {
+    }
+
+    &__item {
+        display: block;
+        width: 300px;
+        /* min-width: 180px; */
+        height: 250px;
+        border: 1px solid rgb(199, 195, 195);
+        text-align: center;
+        position: relative;
+    }
+}
