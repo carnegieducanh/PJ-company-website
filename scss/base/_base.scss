@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 *,
 ::before,
 ::after {
@@ -46,6 +48,26 @@ html::-webkit-scrollbar-thumb {
         scrollbar-width: thin;
         scrollbar-color: rgba(48, 48, 48, 0.35) transparent;
     }
+}
+
+// Tablet & mobile: ẩn lại thanh cuộn dọc (vẫn cuộn được)
+@mixin hide-page-scrollbar {
+    html {
+        scrollbar-width: none;
+    }
+
+    html::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@include abstracts.screen(lg) {
+    @include hide-page-scrollbar;
+}
+
+// Thiết bị cảm ứng màn hình lớn (vd. iPad ngang)
+@media (hover: none) and (pointer: coarse) {
+    @include hide-page-scrollbar;
 }
 
 body {
