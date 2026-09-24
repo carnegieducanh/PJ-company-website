@@ -16,3 +16,12 @@ $grid-breakpoints: (
         @error 'The value "#{$key}" is not in breakpoints list.';
     }
 }
+
+// Frosted-glass overlay for text boxes placed over images/videos
+@mixin glass-overlay($color, $blur: 12px) {
+    background-color: $color;
+    -webkit-backdrop-filter: blur($blur) saturate(140%);
+    backdrop-filter: blur($blur) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}

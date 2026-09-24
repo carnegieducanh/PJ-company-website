@@ -1,36 +1,25 @@
-// Tạo chức năng toogle cho memu mobile
+// Header được load bất đồng bộ (xem load() trong core.js), nên các phần tử
+// bên dưới chưa tồn tại khi file này chạy. Dùng event delegation trên document
+// để sự kiện vẫn hoạt động sau khi header được chèn (hoặc chèn lại) vào trang.
 
-const clickDrop = document.querySelectorAll(".click-on-mobile");
-const menuShow = document.querySelectorAll(".show-on-mobile");
-const lang = document.querySelector(".on-mobile-lang");
-const langItem = document.querySelector(".on-mobile");
+document.addEventListener("click", (e) => {
+    // Tạo chức năng toogle cho memu mobile
+    const dropShow = e.target.closest(".click-on-mobile");
+    if (dropShow) {
+        const dropItem = dropShow.firstElementChild;
+        dropItem?.nextElementSibling?.classList.toggle("hidden");
+    }
 
-[...clickDrop].forEach(
-    (dropShow) =>
-        (dropShow.onclick = (e) => {
-            let dropItem = dropShow.getElementsByClassName("navbar-link");
-            if (dropItem) {
-                dropItem = dropShow.firstElementChild;
-                dropItem.nextElementSibling.classList.toggle("hidden");
-            }
-        })
-);
+    // Chức năng toggle menu ngôn ngữ
+    const lang = e.target.closest(".on-mobile-lang");
+    if (lang) {
+        lang.querySelector(".on-mobile")?.classList.toggle("hidden");
+    }
 
-lang.addEventListener("click", handleClick);
-function handleClick(e) {
-    // langItem.classList.contains("hidden");
-    // ? langItem.classList.remove("hidden")
-    // : langItem.classList.add("hidden");
-    langItem.classList.toggle("hidden");
-}
-
-// Chức năng Click icon menu
-const toggleIcon = document.querySelector(".toggle__icon");
-const menuDrawer = document.querySelector(".toggle__menu--drawer");
-
-toggleIcon.addEventListener("click", handleToggleMenu);
-function handleToggleMenu() {
-    menuDrawer.classList.toggle("is-show");
-    // ? menuDrawer.classList.remove("is-show")
-    // : menuDrawer.classList.add("is-show");
-}
+    // Chức năng Click icon menu
+    if (e.target.closest(".toggle__icon")) {
+        document
+            .querySelector(".toggle__menu--drawer")
+            ?.classList.toggle("is-show");
+    }
+});

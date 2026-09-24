@@ -7,7 +7,7 @@
         // width: 700px;
         max-width: 40%;
         height: auto;
-        background-color: rgb(166 144 96 / 41%);
+        @include abstracts.glass-overlay(rgba(166, 144, 96, 0.55));
         border-radius: 20px;
         z-index: 1;
         overflow: hidden;
@@ -23,7 +23,6 @@
 
         @include abstracts.screen(md) {
             height: 100%;
-            background-color: rgba(166, 144, 96, 0.41);
             border-radius: 0px;
             z-index: 1;
             overflow: hidden;
